@@ -1,27 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 5</title>
+    <title>Pied Piper</title>
 
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
-    
+
     <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e7f1ff;">
+        <a href="#" class="navbar-brand mx-5">
+            Pied Piper
+        </a>
+        <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Hospitals</a>
+                </li>
+                <li class="nav-item">
+                <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Appointment</a>
+                </li>
+            </ul>
+            <a class="nav-link p-sm-2" href="#">Sign Up</a>
+            <button class="btn btn-primary mx-sm-3 mt-3 mt-sm-0 login-btn">
+                Login
+            </button>
+        </div>
+    </nav>
+
+   
+    <!-- Main carousel -->
+    <div class="row mx-3 my-5">
+        <div class="col-12 col-sm-6">
+            <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/carousel-image-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Renowed Doctors</h5>
+                        <p>You are in care of award-winning doctors and techinicians</p>
+                    </div>                
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/carousel-image-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>High-tech infrastructure</h5>
+                        <p>Testing laboratories with pin-point accuracy testing machines</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/carousel-image-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Exceptional Surgeons</h5>
+                        <p>Surgeons with highest success rate</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
+                  <div class="carousel-icon-holder">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </div>  
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
+                    <div class="carousel-icon-holder">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      </div> 
+                </button>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center">
+          <div class="my-2 my-sm-0">
+            <p class="d-inline fs-1 text-primary fw-bolder">One Stop</p>
+            <p class="d-inline fs-1">&nbsp;For All Your Health Needs!!</p>
+          </div>
+          <div class="my-2 my-sm-0">
+            <p class="d-inline fs-5 text-primary fw-bold">Safeguard your future</p>
+            <p class="d-inline fs-5">&nbsp;with our curated health plans and world class service</p>
+          </div>
+          <div class="social-media-icons my-2 my-sm-0">
+            <img src="images/icons8-facebook-500.png" alt="Facebook icon" class="img-fluid">
+            <img src="images/icons8-instagram-500.png" alt="Instagram icon" class="img-fluid">
+            <img src="images/icons8-twitter-500.png" alt="Twitter icon" class="img-fluid">
+          </div>
+        </div>
+    </div>
+
 
     <!-- Card -->
-     <section class="container">
+    <section class="container">
         <div class="card">
             <div class="card-image membership-1"></div>
             <h2>Gold Membership</h2>
@@ -51,6 +150,158 @@
      </div>
     </section>
 
-   
+
+<!-- FAQs -->
+<div class="container-fluid" id="faq-block">
+    <h1 id="faqtitle" class="col-md-9">Frequently Asked Questions</h1>
+    <div class="row align-items-end justify-content-center">
+        <div class="accordion col-lg-5" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is telemedic?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These
+                        classes control the overall appearance, as well as the showing and hiding via CSS
+                        transitions. You can modify any of this with custom CSS or overriding our default variables.
+                        It's also worth noting that just about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How is it different from other healthcare platforms?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Do you offer free vaccinations?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Are there any students discounts?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Do you accept third party health insurance?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faqimg col-4 align-self-center d-none d-lg-block">
+                <img class="img-fluid mx-auto d-block" src="./images/FAQ-01.png" alt="FAQ">
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="row container-fluid justify-content-evenly" id="footer">
+        <div class="col-lg-3">
+            <h2>Subbu Hospitals</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorum ad voluptatum! Vel temporibus
+                esse fugit doloremque totam ratione, dolores dignissimos aliquam, quae veniam debitis deserunt corrupti
+                nostrum, adipisci mollitia!</p>
+        </div>
+        <div class="col-lg-2">
+            <h2>Subscribe</h2>
+            <hr>
+            <ul>
+                <li>Diamond</li>
+                <li>Gold</li>
+                <li>Silver</li>
+            </ul>
+        </div>
+        <div class="col-lg-2">
+            <h2>Useful Links</h2> 
+            <hr>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Plans</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Enroll as a Doctor</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h2>Subscribe to our Newsletter</h2>
+            <hr>
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
 </body>
-</html> 
+
+</html>
