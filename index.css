@@ -96,6 +96,12 @@ html {
     list-style: none;
     list-style-position: outside;
     padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .membership div ul li {
@@ -161,4 +167,14 @@ html {
     background-color: #e7f1ff;
     margin-top: 50px;
     padding: 80px;
+}
+
+/* CSS for subscribe form */
+#subscribe-form{
+    background-color: #e7f1ff;
+    border-radius: 1rem;
+}
+
+.membership-plan-select{
+    display: none;
 }

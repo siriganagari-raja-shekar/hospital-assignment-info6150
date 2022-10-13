@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribe</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="index.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e7f1ff;">
+    <a href="#" class="navbar-brand mx-5">
+      Pied Piper
+    </a>
+    <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hospitals</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Appointment</a>
+          </li>
+        </ul>
+        <a class="nav-link p-sm-2" href="#">Sign Up</a>
+        <button class="btn btn-primary mx-sm-3 mt-3 mt-sm-0 login-btn">
+          Login
+        </button>
+      </div>
+  </nav>
+
+  <div class="row justify-content-center my-5">
+    <h1 class="text-center mb-3">Subscription Form</h1>
+    <div class="col-10 col-sm-6">
+      <form id="subscribe-form" class="needs-validation px-5 py-5" novalidate>
+        <div class="form-group">
+          <label for="name">Name*</label>
+          <input type="text" class="form-control" id="name" placeholder="First name Last name">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please enter name in format: First name Last name
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="emailAddress">Email address*</label>
+          <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please enter name in format: name@example.com
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone number*</label>
+          <input type="text" class="form-control" id="phoneNumber" placeholder="xxx-xxx-xxxx">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please enter phone number in format: xxx-xxx-xxxx
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address1">Address 1*</label>
+          <input type="text" class="form-control" id="address1" placeholder="Street number, Street name">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please enter address in format: Street number and Street name
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address2">Address 2*</label>
+          <input type="text" class="form-control" id="address2" placeholder="Apartment or Unit name/number">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please enter address in format: Apartment or Unit number
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="individualMembership">Subscription Type: </label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="subscriptionType" id="individualMembership"
+              value="individual" required>
+            <label class="form-check-label" for="individualMembership">Individual</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="subscriptionType" id="familyMembership" value="family">
+            <label class="form-check-label" for="familyMembership">Family</label>
+          </div>
+        </div>
+        <div class="form-group membership-plan-select">
+          <label for="membershipPlanSelect">Subscription Plan: </label>
+          <select class="form-control" id="membershipPlanSelect">
+          </select>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please select atleast one plan
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
