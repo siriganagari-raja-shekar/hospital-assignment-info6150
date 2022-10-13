@@ -1,5 +1,5 @@
 /* Common stylings */
-* {
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -54,6 +54,31 @@ html {
 .social-media-icons img:hover {
     transform: scale(1.2, 1.2);
     transition: transform 0.5s;
+}
+
+/* CSS for about*/
+.cl1 {
+    border: 2px solid rgb(251, 255, 224);
+    background-color: rgb(106, 146, 215);
+    padding: 2em;
+}
+
+.pheading {
+    font-size: 20px;
+}
+
+/* .col2{
+    background-color: rgb(251, 255, 224);
+} */
+
+.img-thumbnail:hover {
+
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+
 }
 
 /* CSS for Memberships 
