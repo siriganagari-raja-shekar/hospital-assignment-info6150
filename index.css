@@ -5,14 +5,12 @@
     margin: 0;
 }
 
-body,
-html {
+body,html {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
     background-image: url(./images/background3.png);
 }
-
 
 .container {
     display: flex;
@@ -24,11 +22,22 @@ html {
     text-align: center;
 }
 
-.nav-item a {
+
+@font-face {
+    font-family: GreatVibes;
+    src: url("fonts/GreatVibes-Regular.ttf");
+}
+
+.navbar-brand{
+    font-family: GreatVibes;
+    font-size: 2rem !important;
+}
+
+.nav-item a{
     color: black;
 }
 
-.nav-item {
+.nav-item{
     margin: 0.5rem;
 }
 
@@ -48,6 +57,16 @@ html {
     width: 3rem;
 }
 
+.social-media-icons img{
+    width: 5em;
+    height: 5em;
+}
+
+.social-media-icons img:hover{
+    transform: scale(1.2, 1.2);
+    transition: transform 0.5s;
+}
+
 .social-media-icons img {
     width: 5em;
     height: 5em;
@@ -58,21 +77,43 @@ html {
     transition: transform 0.5s;
 }
 
-/* Styles for About*/
-.img-thumbnail{
-    width: 100%;
+/* CSS for services section */
+
+.service-card{
+    height: 25rem;
+}
+.service-card h2{
+    padding: 10px; 
 }
 
-.aboutp{
-    font-size: 24px !important;
+.service-card p{
+    padding: 10px;
 }
 
-/* CSS for Memberships 
-.card:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 0.5rem black;
-    transition: all 0.5s;
-}*/
+.service-card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px; 
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.service-card:hover {
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.4s;
+}
+
+/* CSS for Memberships */
+
+.membership{
+    width: 20rem;
+    margin-left: 0.3rem;
+}
+
 .membership-price {
     font-size: 36px;
     font-weight: bold;
@@ -98,6 +139,11 @@ html {
     width: 1.5em;
     margin-right: 10px;
 }
+
+.membership:hover{
+    transform: scale(1.05);
+    transition: transform 0.4s;
+}
 .bronze{
     background-color: #e6c8b6;
 }
@@ -109,98 +155,6 @@ html {
 }
 .platinum{
     background-color: #e3e3e3;
-}
-
-/* CSS for info */
- .membership-1 {
-    background-image: url(images/Gold.png);
-}
-
-.membership-2{
-    background-image: url(images/Platinum.png);
-
-}
-.membership-3{
-    background-image: url(images/Diamond.png);
-
-}
-
-.card h2{
-    padding: 10px; 
-}
-
-.card p{
-    padding: 10px;
-}
-
-.card a {
-    background-color: black;
-    color: white;
-    padding: 15px 20px; 
-    display: block;
-    text-align: center;
-    margin: 20px 50px;
-}
-
-.card:hover {
-    background-color: #0d6efd;
-    color: white;
-    cursor: pointer;
-    transform: scale(1.03);
-    transition: all 1s ease;
-}
-body, html{
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: GreatVibes;
-    src: url("fonts/GreatVibes-Regular.ttf");
-}
-.navbar{
-    text-align: center;
-}
-
-.navbar-brand{
-    font-family: GreatVibes;
-    font-size: 2rem !important;
-}
-
-.nav-item a{
-    color: black;
-}
-
-.nav-item{
-    margin: 0.5rem;
-}
-
-.nav-link:hover{
-    background-color: #0d6efd;
-    color: white;
-    text-decoration: underline;
-    border-radius: 0.5rem;
-    transition: background-color 0.5s;
-}
-
-.carousel-icon-holder{
-    background-color: black;
-    border-radius: 50%;
-    text-align: center;
-    padding: 0.5rem;
-    height: 3rem;
-    width: 3rem;
-}
-
-.social-media-icons img{
-    width: 5em;
-    height: 5em;
-}
-
-.social-media-icons img:hover{
-    transform: scale(1.2, 1.2);
-    transition: transform 0.5s;
 }
 
 /* CSS for FAQs */
