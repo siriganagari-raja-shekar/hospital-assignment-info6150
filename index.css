@@ -1,3 +1,29 @@
+.cl1 {
+
+    border: 2px solid rgb(251, 255, 224);
+    /* background-color: #f8f8ec; */
+    background-color: rgb(106, 146, 215);
+    
+    padding: 2em;
+}
+
+.pheading {
+    font-size: 20px;
+}
+
+/* .col2{
+    background-color: rgb(251, 255, 224);
+} */
+
+.img-thumbnail:hover {
+
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+
+}
 *{
     box-sizing: border-box;
     padding: 0;
