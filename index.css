@@ -3,10 +3,6 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background: rgb(243, 240, 240)
-
-}
 .container{
     display: flex;
     justify-content: center;
@@ -134,4 +130,14 @@ body, html{
     background-color: #e7f1ff;
     margin-top: 50px;
     padding: 80px;
+}
+
+/* CSS for subscribe form */
+#subscribe-form{
+    background-color: #e7f1ff;
+    border-radius: 1rem;
+}
+
+.membership-plan-select{
+    display: none;
 }
