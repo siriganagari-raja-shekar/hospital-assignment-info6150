@@ -10,7 +10,9 @@ html {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    background-image: url(./images/background2.png);
 }
+
 
 .container {
     display: flex;
@@ -56,30 +58,7 @@ html {
     transition: transform 0.5s;
 }
 
-/* CSS for about*/
-.cl1 {
-    border: 2px solid rgb(251, 255, 224);
-    background-color: rgb(106, 146, 215);
-    padding: 2em;
-}
 
-.pheading {
-    font-size: 20px;
-}
-
-/* .col2{
-    background-color: rgb(251, 255, 224);
-} */
-
-.img-thumbnail:hover {
-
-    -ms-transform: scale(1.1);
-    /* IE 9 */
-    -webkit-transform: scale(1.1);
-    /* Safari 3-8 */
-    transform: scale(1.1);
-
-}
 
 /* CSS for Memberships 
 .card:hover{
@@ -112,6 +91,18 @@ html {
     width: 1.5em;
     margin-right: 10px;
 }
+.bronze{
+    background-color: #dfb297;
+}
+.gold{
+    background-color: #eee5b5;
+}
+.diamond{
+    background-color: #d7ecf4;
+}
+.platinum{
+    background-color: #e3e3e3;
+}
 
 /* CSS for info */
 
@@ -136,6 +127,13 @@ html {
     color: #0b62e4;
     padding: 10px;
     border-radius: 5px;
+}
+
+#faqtitle span, #aboutustitle span, #membership-title span, #servicestitle span{
+    display: block;
+    width: 50%;
+    border-bottom: 4px solid #0d6efd;
+    margin: 0.3em auto;
 }
 
 .faqimg img {
