@@ -17,7 +17,9 @@ body,html {
     justify-content: center;
     flex-wrap: wrap;
 }
-
+.section{
+    margin-bottom: 7em;
+}
 .navbar {
     text-align: center;
 }
@@ -44,6 +46,13 @@ body,html {
 .nav-link:hover {
     background-color: #0d6efd;
     color: white;
+    border-radius: 0.5rem;
+    transition: background-color 0.5s;
+}
+
+.navactive{
+    background-color: #0d6efd;
+    color: white !important;
     border-radius: 0.5rem;
     transition: background-color 0.5s;
 }
@@ -105,6 +114,13 @@ body,html {
     cursor: pointer;
     transform: scale(1.05);
     transition: all 0.4s;
+}
+/* CSS for About us*/
+.aboutp{
+    font-size: 24px;
+}
+.img-thumbnail{
+    width: 100%;
 }
 
 /* CSS for Memberships */
@@ -172,7 +188,7 @@ body,html {
 }
 
 #faqtitle, #aboutustitle, #membership-title, #servicestitle {
-    margin: 1em 0;
+    margin: 1em auto;
     text-align: center;
     width: fit-content;
     color: #0b62e4;

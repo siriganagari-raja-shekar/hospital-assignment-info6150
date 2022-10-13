@@ -21,6 +21,18 @@ $( document ).ready(function() {
 
         form.classList.add('was-validated')
       }, false);
+
+      var newsLetterForm = document.getElementById("newsletter-form");
+      newsLetterForm.reset();
+      newsLetterForm.addEventListener('submit', function (event) {
+          if (!newsLetterForm.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          newsLetterForm.classList.add('was-validated')
+        }, false);
+
     if($("#subscribe-form").length){
 
         

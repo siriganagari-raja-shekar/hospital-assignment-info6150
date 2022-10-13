@@ -39,16 +39,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link navactive" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Hospitals</a>
+                        <a class="nav-link" href="./subscribe.html">Subscribe</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Appointment</a>
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
                 <a class="nav-link p-sm-2" href="#">Sign Up</a>
@@ -58,9 +55,8 @@
             </div>
     </nav>
 
-
     <!-- Main carousel -->
-    <div class="row mx-3 my-5">
+    <div class="row section">
         <div class="col-12 col-sm-6">
             <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -126,15 +122,15 @@
     </div>
 
     <!--Services cards-->
-    <section id="team">
-        <div class="container-fluid w-75 my-3 py-5 text-center">
+    <section id="team" class="section">
+        <div class="container-fluid w-75 text-center">
             <div class="row">
                 <div class="col">
                     <h1 id="servicestitle">Our Services <span></span></h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 py-3 py-md-0">
+                <div class="col-lg-3 col-md-6 py-3 ">
                     <div class="card service-card">
                         <div class="card-body">
                             <img src="images/appointments.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
@@ -144,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 py-3 py-md-0">
+                <div class="col-lg-3 col-md-6 py-3 ">
                     <div class="card service-card">
                         <div class="card-body">
                             <img src="images/videocall.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
@@ -155,7 +151,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 py-3 py-md-0">
+                <div class="col-lg-3 col-md-6 py-3 ">
                     <div class="card service-card">
                         <div class="card-body">
                             <img src="images/privacy.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
@@ -166,7 +162,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 py-3 py-md-0">
+                <div class="col-lg-3 col-md-6 py-3 ">
                     <div class="card service-card">
                         <div class="card-body">
                             <img src="images/search doctor.png" alt="" class="img-fluid rounded-circle p-4 w-50 mb-3">
@@ -181,10 +177,10 @@
     </section>
 
     <!-- About -->
-    <div class="container-fluid w-75 aboutus">
+    <div class="container-fluid w-75 aboutus section">
         <h1 id="aboutustitle">About Us<span></span></h1>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-xxl-6">
                 <h1>Quality health starts with Quality Doctors</h1>
                 <p class="aboutp">
                     Locally owned, not-for-profit and nationally recognized, Freeman <br>
@@ -218,14 +214,14 @@
                 </p>
 
             </div>
-            <div class="col-md-6 cl1 bg-image hover-zoom">
+            <div class="col-xxl-6 bg-image hover-zoom">
                 <img src="images/doctor2.png" class="img-thumbnail" alt="Doctor Image">
             </div>
         </div>
     </div>
 
     <!-- Membership cards -->
-    <div class="container-fluid w-75">
+    <div class="container-fluid w-75 section">
         <h1 id="membership-title" class="col text-center">Our membership plans <span></span></h1>
         <ul class="nav nav-pills mb-3 flex-row justify-content-center" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -242,7 +238,7 @@
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="personal-plan" role="tabpanel"
                 aria-labelledby="personal-plan-tab">
-                <div class="row justify-content-evenly py-5">
+                <div class="row justify-content-evenly ">
                     <div class="membership card bronze my-3 col-12 col-sm-6">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
@@ -340,10 +336,9 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade " id="family-plan" role="tabpanel"
-                aria-labelledby="family-plan-tab">
-                <div class="row justify-content-evenly py-5">
-                    <div class="membership card  my-3 col-12 col-sm-6">
+            <div class="tab-pane fade " id="family-plan" role="tabpanel" aria-labelledby="family-plan-tab">
+                <div class="row justify-content-evenly">
+                    <div class="membership card  col-12 col-sm-6">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Basic</h5>
@@ -367,7 +362,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="membership card  my-3 col-12 col-sm-6">
+                    <div class="membership card  col-12 col-sm-6">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Premium</h5>
@@ -397,7 +392,7 @@
     </div>
 
     <!-- FAQs -->
-    <div class="container-fluid w-75" id="faq-block">
+    <div class="container-fluid w-75 section" id="faq-block">
         <h1 id="faqtitle" class="col">Frequently Asked Questions <span></span></h1>
         <div class="row align-items-end justify-content-between">
             <div class="accordion col-lg-6" id="accordionExample">
@@ -536,13 +531,39 @@
         <div class="col-lg-3">
             <h2>Subscribe to our Newsletter</h2>
             <hr>
-            <form>
+            <form id="newsletter-form">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" pattern="^[a-zA-Z0-9]+@\\w+.\\w{1,3}$" required >
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter name in format: name@example.com
+                    </div>
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submit-button">
+                    Submit
+                </button>
+                <div class="modal fade" id="submit-button" tabindex="-1" aria-labelledby="submit-buttonLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="submit-buttonLabel">News letter</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Successfully subscribed to our news letter.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
