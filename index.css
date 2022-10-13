@@ -141,6 +141,9 @@ body,html {
     padding: 0;
     margin: 0;
 }
+.badge{
+    background-color: red;
+}
 .container{
     display: flex;
     justify-content: center;

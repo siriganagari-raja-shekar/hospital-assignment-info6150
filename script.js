@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function () {
     $(".carousel-item > img").addClass("rounded img-fluid");
     $(".nav-link").addClass("fs-5");
     $(".login-btn").addClass("fs-5");
@@ -12,62 +12,53 @@ $( document ).ready(function() {
         address2Regex: "^[a-zA-Z0-9-#\\s]*$"
     }
     var form = document.getElementById("subscribe-form");
-    form.reset();
-    form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
+    if (form) {
+        form.reset();
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
 
-        form.classList.add('was-validated')
-      }, false);
-
-      var newsLetterForm = document.getElementById("newsletter-form");
-      newsLetterForm.reset();
-      newsLetterForm.addEventListener('submit', function (event) {
-          if (!newsLetterForm.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          newsLetterForm.classList.add('was-validated')
+            form.classList.add('was-validated')
         }, false);
+    }
 
-    if($("#subscribe-form").length){
 
-        
-        $.each(inputRegex, (key, value) =>{
-            var currInputId = key.substring(0,key.indexOf("Regex"));
+
+    if ($("#subscribe-form").length) {
+        $.each(inputRegex, (key, value) => {
+            var currInputId = key.substring(0, key.indexOf("Regex"));
             var $inputElement = $(`#${currInputId}`);
             $inputElement.attr("required", "required");
             $inputElement.attr("pattern", value);
         });
     }
 
-    $("input[name='subscriptionType']").on("input", (event)=>{
-        
+    $("input[name='subscriptionType']").on("input", (event) => {
+
         var subType = event.target.value.trim();
         var $selectInput = $("#membershipPlanSelect");
         $selectInput.attr("required", "required");
         $selectInput.empty();
-        if(subType === "individual"){
+        if (subType === "individual") {
             $selectInput.append(`<option selected disabled value="">Choose a plan</option>`);
             $selectInput.append("<option>Bronze</option>");
             $selectInput.append("<option>Silver</option>");
             $selectInput.append("<option>Gold</option>");
             $selectInput.append("<option>Platinum</option>");
         }
-        else{
+        else {
             $selectInput.append(`<option selected disabled value="">Choose a plan</option>`);
             $selectInput.append("<option>Basic</option>");
             $selectInput.append("<option>Premium</option>");
         }
         $selectInput.parent().css("display", "block");
     });
-    
 
-    $(".corporate-button").on("click", (event)=>{
+
+    $(".corporate-button").on("click", (event) => {
         $(".corporate-toast").toast("show");
     });
-    
+
 });

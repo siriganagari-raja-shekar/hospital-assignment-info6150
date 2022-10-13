@@ -14,7 +14,7 @@ from across the city hospitals and private medical professionals as well.
 8. Modal: Used to alert the user regarding different things
 9. Toast: Used to give user info regarding the form details
 10. Forms: Form controls and form validation from bootstrap were used
-11. Popovers: Used popovers as a tooltip
+11. Tooltip: Used tooltip in the newletter submit button
 
 Our current website consists of our home landing page and a subscription page for our current provided plans
 
