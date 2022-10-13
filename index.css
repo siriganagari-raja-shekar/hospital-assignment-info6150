@@ -24,3 +24,140 @@
     transform: scale(1.1);
 
 }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(243, 240, 240)
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    width: 270px;
+    height: 400px ; 
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-image {
+    background: rgb(133, 86, 86);
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0;
+}
+
+ .membership-1 {
+    background-image: url(images/Gold.png);
+}
+
+.membership-2{
+    background-image: url(images/Platinum.png);
+
+}
+.membership-3{
+    background-image: url(images/Diamond.png);
+
+}
+
+   
+.card h2{
+    padding: 10px; 
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px; 
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.card:hover {
+    background-color: rgb(146, 179, 209);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+body, html{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    text-align: center;
+}
+
+.nav-item a{
+    color: black;
+}
+
+.nav-item{
+    margin: 0.5rem;
+}
+
+.nav-link:hover{
+    background-color: #0d6efd;
+    color: white;
+    text-decoration: underline;
+    border-radius: 0.5rem;
+    transition: background-color 0.5s;
+}
+
+.carousel-icon-holder{
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0.5rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.social-media-icons img{
+    width: 5em;
+    height: 5em;
+}
+
+.social-media-icons img:hover{
+    transform: scale(1.2, 1.2);
+    transition: transform 0.5s;
+}
+
+/* CSS for FAQs */
+.accordion-button{
+    font-weight:600;
+}
+.accordion .col h1{
+    padding: 5px;
+    margin-bottom: 30px;
+}
+#faq-block{
+    padding: 50px;
+}
+#faqtitle{
+    margin: 40px auto;
+}
+.faqimg img{
+    width: 90%;
+}
+
+/* CSS for Footer */
+#footer{
+    background-color: #e7f1ff;
+    margin-top: 50px;
+    padding: 80px;
+}
