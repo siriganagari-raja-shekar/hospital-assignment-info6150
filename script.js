@@ -65,5 +65,9 @@ $( document ).ready(function() {
         $selectInput.parent().css("display", "block");
     });
     
+
+    $(".corporate-button").on("click", (event)=>{
+        $(".corporate-toast").toast("show");
+    });
     
 });
