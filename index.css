@@ -114,15 +114,6 @@ html {
 }
 
 /* CSS for info */
-#servicestitle{
-    margin: 1em 0;
-    text-align: center;
-    width: fit-content;
-    background-color: #0b62e4;
-    color: white;
-    padding: 10px;
-    border-radius: 5px
-}
 
 /* CSS for FAQs */
 .accordion-button {
@@ -134,26 +125,15 @@ html {
     margin-bottom: 30px;
 }
 
-#membership-title {
-    margin: 1em 0;
-    text-align: center;
-    width: fit-content;
-    background-color: #0b62e4;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-
 #faq-block {
     margin: 5em auto;
 }
 
-#faqtitle {
+#faqtitle, #aboutustitle, #membership-title, #servicestitle {
     margin: 1em 0;
     text-align: center;
     width: fit-content;
-    background-color: #0b62e4;
-    color: white;
+    color: #0b62e4;
     padding: 10px;
     border-radius: 5px;
 }
